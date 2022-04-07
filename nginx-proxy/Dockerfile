@@ -1,4 +1,4 @@
-FROM jwilder/nginx-proxy:0.9.3@sha256:e964c66538fdf7ea5a78de95b78edcfb1b26644623d57298759aadc153bcbbe0
+FROM jwilder/nginx-proxy:1.0@sha256:3b8cb95a88d2905900cc761d28f6f3c32bbb2077fbf9f9edf870cea9aa537bf0
 LABEL org.label-schema.schema-version="1.0.0"
 LABEL org.label-schema.vendor="EasyEngine"
 LABEL org.label-schema.name="nginx-proxy"
