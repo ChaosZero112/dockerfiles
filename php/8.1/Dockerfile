@@ -118,14 +118,14 @@ ENV NR_PORT=/run/newrelic/newrelic.sock
 RUN mkdir -p /var/log/php; \
 	chown -R www-data: /var/log/php; \
 	rm /usr/local/etc/php-fpm.d/*;
-COPY php.ini /usr/local/etc/php/php.ini
-COPY easyengine.conf /usr/local/etc/php-fpm.d/easyengine.conf
+COPY php/8.1/php.ini /usr/local/etc/php/php.ini
+COPY php/8.1/easyengine.conf /usr/local/etc/php-fpm.d/easyengine.conf
 
-COPY expose_off.ini /usr/local/etc/php/conf.d/expose_off.ini
-COPY bashrc /root/.bashrc
-COPY bashrc /var/www/.bashrc
-COPY docker-entrypoint.sh /usr/local/bin/
-COPY newrelic.ini /usr/local/etc/php/conf.d/newrelic.ini
+COPY php/8.1/expose_off.ini /usr/local/etc/php/conf.d/expose_off.ini
+COPY php/8.1/bashrc /root/.bashrc
+COPY php/8.1/bashrc /var/www/.bashrc
+COPY php/8.1/docker-entrypoint.sh /usr/local/bin/
+COPY php/8.1/newrelic.ini /usr/local/etc/php/conf.d/newrelic.ini
 
 WORKDIR /var/www/htdocs
 USER www-data

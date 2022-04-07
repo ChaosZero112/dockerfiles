@@ -6,5 +6,5 @@ LABEL org.label-schema.name="redis"
 
 RUN mkdir -p /var/log/redis; \
 	chown -R redis: /var/log/redis
-COPY redis.conf /usr/local/etc/redis/redis.conf
-COPY purge_all_cache.lua /data/purge_all_cache.lua
+COPY redis/redis.conf /usr/local/etc/redis/redis.conf
+COPY redis/purge_all_cache.lua /data/purge_all_cache.lua
