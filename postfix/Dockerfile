@@ -43,7 +43,8 @@ RUN apt-get update \
 
  # Download and prepare Postfix sources
 RUN curl -fL -o /tmp/postfix.tar.gz \
-         http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.3.1.tar.gz \
+         http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.7.0.tar.gz \ 
+         #http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.3.1.tar.gz \
  && (echo "2307f50f8b7dab1db46ebe4ae30bc5682a25b9c49ae5ae65aa95b4620bb5450dd5929977c0f34b9e73a92ca6af36fd8e24167732420a1a2d89167c7a3b197276  /tmp/postfix.tar.gz" \
          | sha512sum -c -) \
  && tar -xzf /tmp/postfix.tar.gz -C /tmp/
