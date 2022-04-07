@@ -44,7 +44,7 @@ RUN apt-get update \
  # Download and prepare Postfix sources
 RUN curl -fL -o /tmp/postfix.tar.gz \
          http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.7.0.tar.gz \
- && (echo "60b8926471f263af9257cf69a850f0d562e1405f86a45b937973a67a9556813e /tmp/postfix.tar.gz" \
+ && (echo "645c6a74959703f8dff5b696b2df2e8bc0c91ac530127a21c998e3defbb9528c /tmp/postfix.tar.gz" \
          | sha256sum -c -) \
  && tar -xzf /tmp/postfix.tar.gz -C /tmp/
 
