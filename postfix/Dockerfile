@@ -25,7 +25,7 @@ RUN apt-get update \
     \
  # Install tools for building
  && toolDeps=" \
-        curl make gcc g++ libc-dev \
+        curl make gcc g++ libc-dev m4 \
     " \
  && apt-get install -y --no-install-recommends --no-install-suggests \
             $toolDeps \
