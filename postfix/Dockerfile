@@ -34,7 +34,7 @@ RUN apt-get update \
  && buildDeps=" \
         libssl-dev \
         libpcre3-dev libicu-dev \
-        libdb-dev libpq-dev libmariadbclient-dev libsqlite3-dev \
+        libdb-dev libpq-dev libmysqlclient-dev libsqlite3-dev \
         libsasl2-dev \
         libldap2-dev \
     " \
