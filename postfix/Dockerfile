@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 LABEL maintainer="Mriyam Tamuli <mbtamuli@gmail.com>"
 LABEL org.label-schema.schema-version="1.0.0-rc1"
