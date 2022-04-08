@@ -17,7 +17,7 @@ RUN apt-get update \
     \
  # Install Postfix dependencies
  && apt-get install -y --no-install-recommends --no-install-suggests \
-            libpcre3 libicu \
+            libpcre3 libicu-dev \
             libdb5.3 libpq5 libmariadb3 libsqlite3-0 \
             libsasl2-2 \
             libldap-2.4 \
